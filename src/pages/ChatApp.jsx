@@ -84,15 +84,18 @@ const ChatApp = () => {
           {messages.map((msg) => (
             <div
               key={msg.id}
-              className={`py-4 my-1 w-fit  ${
+              className={`p-2 m-2  w-fit flex rounded-2xl  flex-col gap-1  ${
                 msg.sender === currentUser
-                  ? "bg-green-400 self-end ml-auto text-right"
+                  ? "bg-green-500 self-end ml-auto text-right"
                   : "bg-gray-300"
               }`}
             >
-              <p className="block">{msg.sender}</p>
-              <br />
-              <span>{msg.text}</span>
+              <p className="
+               text-sm opacity-80 max-w-20  ml-auto bg-gray-50 rounded-3xl px-4">
+                {msg.sender === currentUser ? "انت" : msg.sender}
+              </p>
+              <hr />
+              <span >{msg.text}</span>
             </div>
           ))}
         </div>
