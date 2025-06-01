@@ -81,7 +81,7 @@ const Login = () => {
         </form>
         <footer className="flex items-center gap-2">
           <p> New user?</p>
-          <Link to="/register" class="text-sky-700  hover:text-sky-400  ">
+          <Link to="/" class="text-sky-700  hover:text-sky-400  ">
             register
           </Link>
         </footer>

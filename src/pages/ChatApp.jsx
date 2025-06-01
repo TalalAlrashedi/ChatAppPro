@@ -66,7 +66,7 @@ const ChatApp = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 transition-all duration-500">
       <div className="w-full max-w-2xl bg-white/80 backdrop-blur-md shadow-2xl rounded-xl p-6">
-        {/* رأس التطبيق مع زر الخروج */}
+
         <div className="flex justify-between items-center mb-2">
           <h1 className="text-3xl font-bold text-sky-800">تطبيق الدردشة</h1>
           <button
