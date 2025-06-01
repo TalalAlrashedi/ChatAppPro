@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
+import { FaUserPlus } from "react-icons/fa";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -40,7 +41,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post(url, { email, password,name });
+      await axios.post(url, { email, password, name });
       await Swal.fire({
         icon: "success",
         title: "تم التسجيل بنجاح سيتم نقلك لصفحة تسجيل الدخول",
@@ -58,10 +59,8 @@ const Register = () => {
         <h1 className="text-center text-3xl p-3">Register page</h1>
         <hr />
         <header>
-          <img
-            class="w-15 mx-auto m-3"
-            src="https://img.icons8.com/?size=100&id=6a8F4OVXnpvb&format=png&color=000000"
-          />
+
+          <FaUserPlus class="w-15 text-6xl mx-auto m-2" />
         </header>
         <form onSubmit={createUser}>
           <div>

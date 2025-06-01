@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
-import { RxAvatar } from "react-icons/rx";
+import { FaUser } from "react-icons/fa";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -44,7 +44,7 @@ const Login = () => {
         <h1 className="text-center text-3xl p-3">Login page</h1>
         <hr />
         <header>
-          <RxAvatar class="w-15  text-6xl mx-auto m-3" />
+          <FaUser class="w-10  text-6xl mx-auto m-3" />
         </header>
         <form onSubmit={handleLogin}>
           <div>
