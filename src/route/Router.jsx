@@ -13,7 +13,7 @@ let router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { path: "register", element: <Register /> },
+      { path: "/", element: <Register /> },
       { path: "login", element: <Login /> },
       { path: "chatapp", element: <ChatApp /> },
     ],
